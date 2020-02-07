@@ -1,4 +1,4 @@
-/*
+/**
  * Şu An Nerede Ezan Okunuyor Türkiye!
  * 14.07.2019
  */
