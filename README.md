@@ -7,6 +7,5 @@ Son olarak, kullandığımız fotoğraflardan default olan Bilkent EE lablarınd
 
 Vakitlerin baş harflerine tıklamak vakitlerin butonlarına tıklamakla aynı işlevde.
 
-Bu ezanlar-ki şehâdetleri dînin temeli,
-
+Bu ezanlar-ki şehâdetleri dînin temeli,  
 Ebedî yurdumun üstünde benim inlemeli.
