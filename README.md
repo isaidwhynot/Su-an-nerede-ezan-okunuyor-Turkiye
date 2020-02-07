@@ -11,3 +11,5 @@ Bu ezanlar-ki şehâdetleri dînin temeli,
 Ebedî yurdumun üstünde benim inlemeli.
 
 ![in action](fotograflar/__ss_for_readme.png)
+
+(butonlar ve yazılarının rengi her yenilemede rassal olarak değişiyor :p)
