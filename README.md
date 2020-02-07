@@ -10,4 +10,4 @@ Vakitlerin baş harflerine tıklamak vakitlerin butonlarına tıklamakla aynı i
 Bu ezanlar-ki şehâdetleri dînin temeli,  
 Ebedî yurdumun üstünde benim inlemeli.
 
-![in action](fotograflar/_ss_for_readme.png)
+![in action](fotograflar/__ss_for_readme.png)
