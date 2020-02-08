@@ -8,7 +8,7 @@ Son olarak, kullandığımız fotoğraflardan default olan Bilkent EE lablarınd
 Vakitlerin baş harflerine tıklamak vakitlerin butonlarına tıklamakla aynı işlevde.
 
 Bu ezanlar-ki şehâdetleri dînin temeli,  
-Ebedî yurdumun üstünde benim inlemeli.
+... yurdumun üstünde benim inlemeli.
 
 ![in action](fotograflar/__ss_for_readme.png)
 
