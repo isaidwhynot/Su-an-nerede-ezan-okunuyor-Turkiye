@@ -14,7 +14,7 @@ cd <Su-an-nerede-ezan-okunuyor-Turkiye>
 http-server -c1 -p 5151
 ```
 ve sonrasında
-[http://localhost:5151]
+http://localhost:5151
 
 Kullandığımız fotoğraflardan default olan Bilkent EE lablarından bir hatıradır, her şehir için kulanılanları ise https://www.sabah.com.tr/galeri/turkiye/81-il-ile-81-muthis-kare 'den aldık.
 
