@@ -1,16 +1,16 @@
-/**
+/*
  * Şu An Nerede Ezan Okunuyor Türkiye!
  * 14.07.2019
  */
-let header;		  	 //şehirlerin alt alta yazılmak için tutulduğu DOM elemanı
+let header;		  	 	//şehirlerin alt alta yazılmak için tutulduğu DOM elemanı
 let sehirIdx = 0; 		//arkaplan resminde gösterilesi şehri söyler
 let defaultImag; 		//arkaplanın gösterilecek şehir yokkenki hali
-let gosterilenSehir; 		//"şu an" resmi gösterilen şehir, isminin rengini farklı kılmak için needed
+let gosterilenSehir; 	//"şu an" resmi gösterilen şehir, isminin rengini farklı kılmak için needed
 
-const buttons = []; 			//sab, ogl, iki, aks, yat
-const resultantSehirler = new Set(); 	//"'şu an' ezan okunan" şehirler
-const dataSehirler = []; 		//namaz vakitleri
-const imagSehirler = {}; 		//arkaplan resimleri
+const buttons = []; //sab, ogl, iki, aks, yat
+const resultantSehirler = new Set(); //"'şu an' ezan okunan" şehirler
+const dataSehirler = []; //namaz vakitleri
+const imagSehirler = {}; //arkaplan resimleri
 const sehirler = ["adana", "adiyaman", "afyonkarahisar", "agri", "amasya", "ankara",
 	"antalya", "artvin", "aydin", "balikesir", "bilecik", "bingol",
 	"bitlis", "bolu", "burdur", "bursa", "canakkale", "cankiri",
@@ -53,16 +53,16 @@ const durations = {
 };
 const months = {
 	"Mar": "Mart",
-	"June": "Haziran",
+	"Jun": "Haziran",
 	"Nov": "Kasim",
 	"Oct": "Ekim",
 	"Apr": "Nisan",
 	"Feb": "Subat",
-	"July": "Temmuz",
+	"Jul": "Temmuz",
 	"May": "Mayis",
 	"Aug": "Agustos",
 	"Dec": "Aralik",
-	"Sept": "Eylul",
+	"Sep": "Eylul",
 	"Jan": "Ocak"
 };
 
@@ -88,7 +88,7 @@ function setup() {
 	header.style("color", "darkblue");
 
 	for(let i = 0; i < besVakit.length; ++i) {
-		const buttonName = besVakit[i]; 	//Sabah
+		const buttonName = besVakit[i]; //Sabah
 		const shortName = vakitMap[buttonName]; //sab
 		buttons.push(createButton(buttonName));
 		buttons[i].position(i * 200 + 300, 175);
@@ -179,6 +179,7 @@ function keyPressed() {
 	if(vakitName) {
 		checkCities(vakitName);
 		updateCityList();
+		//
 		sehirIdx = 0;
 		const btnAsIfPressed = select("." + vakitName);
 		const x = btnAsIfPressed.elt.offsetLeft;
@@ -230,7 +231,7 @@ function suits(vakit, vakitName) {
 //helper 1
 function topla(vakit, duration) {
 	let hr = vakit[0];
-	let mn = vakit[1] + duration - 1; //-1 it is, 64:23 maçın 65.dakikasına tekabül eder
+	let mn = vakit[1] + duration - 1; //-1 it is, 64:23 maçın 65.dakikasındadır
 	if(mn >= 60) {
 		mn -= 60;
 		hr += 1;
