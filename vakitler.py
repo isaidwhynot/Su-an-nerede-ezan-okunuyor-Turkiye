@@ -43,19 +43,19 @@ days_dict = dict.fromkeys(range(1, num_days + 1), vakit_dict)
 cities_dict = dict.fromkeys(sehirler, days_dict)
 
 # WARNING: sehirler slice-by-slice process edilebilir hata verirse (e.g. 25 vilayet at a time)
-for sehir in sehirler[:]:
+for sehir in sehirler:
     site = f"https://www.haberturk.com/namaz-vakitleri/{sehir}"
     html_source = urlopen(site)
 
     soup = BeautifulSoup(html_source, 'html.parser')
 
     imsakiye_table = soup.find(id="imsakiye-table")
-    imsakiye_body = imsakiye_table.contents[3]  #skipping \n, thead and \n
+    imsakiye_body = imsakiye_table.contents[3]  # skipping \n, thead and \n
     imsakiye_contents = ("".join(str(ibc).split("\n")) for ibc in imsakiye_body.children if ibc != "\n")
     vakitler = [ (Saat(*vakit) for vakit in re.findall(r">\s*(\d{2}):(\d{2})\s*</", content)[1:]) for content in imsakiye_contents]
 
     sehir_aylik = cities_dict[sehir]
-    starting_day = 0 #if wanted from today, make it <today-1>
+    starting_day = 0 # if wanted from today, make it <today-1>
     for day in it.islice(sehir_aylik, starting_day, num_days):
         sehir_aylik[day] = dict(zip(bes_vakit, vakitler[day-1]))
 
@@ -66,7 +66,4 @@ for sehir in sehirler[:]:
 
 # Modifying this script a little so that the last modified date is changed to its last run date
 with open("vakitler.py", "a") as fh:
-    fh.write("\n#rjsh")
-
-#rjsh
-#rjsh
+    fh.write("\n# the end?")
